@@ -1,0 +1,137 @@
+html {
+    min-height: 100vh;
+  background-image: -webkit-linear-gradient(
+    65deg,
+    #a683e3 50%,
+    #e4e9fd 50%
+  );
+}
+body{
+    margin: 0;
+}
+header {
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+footer {
+  text-align: center;
+}
+
+.heading {
+  color: white;
+  background-color: #a269d8;
+  padding: 0px 5px;
+  text-align: center;
+  width: 400px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 10px 0px;
+  margin: 50px 0px;
+}
+
+.list {
+  background-color: white;
+
+  margin: 0 auto;
+  width: 400px;
+  height: 4rem;
+
+  margin-bottom: 50px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.button {
+  /* height: 30px ;
+    width: 30px; */
+  border-radius: 50%;
+  background-color: #a269d8;
+  color: white;
+}
+
+.appeareditem {
+  background-color: white;
+  width: 400px;
+  margin: 0 auto;
+  font-size: x-large;
+  align-content: center;
+  border-bottom: 1px solid dimgrey;
+  color: indianred;
+  height: 4rem;
+}
+#check-box {
+  margin: 25px;
+  padding: 5px 5px;
+}
+label {
+  width: 60px;
+  height: 150%;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+#notecreator {
+  all: unset;
+
+  color: rgb(0, 0, 0);
+  height: 4rem;
+  width: 86.5%;
+  padding: 0;
+
+  text-align: center;
+}
+
+#notecreator:focus {
+  border-bottom: 2px solid #a269d8;
+}
+
+.forma {
+  width: 100%;
+}
+
+#button {
+  height: 3rem;
+  width: 3rem;
+  padding: 0px;
+  border-radius: 50%;
+  margin: 0 auto;
+
+  color: white;
+  background-color: #a269d8;
+  font-size: 28px;
+  vertical-align: middle;
+  border: none;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  text-decoration-color: #a269d8;
+}
+
+.nav-button {
+  width: 175px;
+  border-radius: 5px;
+  background-color: #a683e3;
+  height: 4rem;
+  font-size: x-large;
+  border-width: 0;
+  
+}
+a{
+    color: white!important;
+    text-decoration: none!important;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  margin: 50px auto;
+  justify-content: space-between;
+}

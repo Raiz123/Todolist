@@ -1,0 +1,38 @@
+<!-- write your body here -->
+
+<%- include("header.ejs")%>
+<section >
+  <!-- heading code  -->
+  <div class="heading">
+    <% const date = new Date(); const options = { month: 'long', weekday:
+    'long', day: 'numeric', }; %>
+    <h1><%= date.toLocaleString('en-US', options) %></h1>
+  </div>
+  <!-- heading code ended -->
+  <%if(locals.entryItems){ %> <% for (let i=0;i< entryItems.length ;i++ ){ %>
+
+  <div class="appeareditem">
+    <form>
+      <input type="checkbox" name="item" id="check-box" />
+      <label for="item"><%= entryItems[i] %></label>
+    </form>
+  </div>
+
+  <%}%> <% } %>
+
+  <div class="list">
+    
+    <form class="forma" action="/" method="POST">
+      <input
+        type="text"
+        id="notecreator"
+        placeholder="New item"
+        name="newitem"
+      />
+
+      <button type="submit" id="button" name="button" value="<%= listTitle  %>">+</button>
+    </form>
+  </div>
+</section>
+
+<%- include("footer.ejs")%>
