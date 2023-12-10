@@ -9,16 +9,18 @@
     <h1><%= date.toLocaleString('en-US', options) %></h1>
   </div>
   <!-- heading code ended -->
-  <%if(locals.entryItems){ %> <% for (let i=0;i< entryItems.length ;i++ ){ %>
+  <%if(locals.entryItems){ entryItems.forEach(item => { %>
+
 
   <div class="appeareditem">
-    <form>
-      <input type="checkbox" name="item" id="check-box" />
-      <label for="item"><%= entryItems[i] %></label>
+    <form action="/delete" method="POST">
+      <input type="checkbox" value="<%= item._id  %>" onChange="this.form.submit()" name="checkbox" id="check-box" />
+      <label for="item"><%= item.name %></label>
+      <input type="hidden" name="listName" value="<%= listTitle%>" ></input>
     </form>
   </div>
 
-  <%}%> <% } %>
+  <%})};%>
 
   <div class="list">
     
